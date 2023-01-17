@@ -22,3 +22,15 @@ app.listen(port, ()=>{
 app.get('/', (req, res) =>{
     res.render("index")
 })
+
+app.get('/invite', (req, res)=>{
+    res.render("invite")
+})
+
+app.get('/commands', (req, res)=>{
+    res.render("commands")
+})
+
+app.get('/contact', (req, res)=>{
+    res.render("contact")
+})

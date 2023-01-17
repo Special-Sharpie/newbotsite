@@ -1,9 +1,32 @@
+:root{
+    --purple: #6200FF;
+    --accentPurple: #5620DC;
+    --gray: #212225;
+    --accentGray : #37383B;
+    --terPurple: #975ef3;
+}
+
 body{
-    background-color:pink;
-    padding: 25px;
+    background-color:var(--gray);
+}
+
+.hsbnav{
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: var(--purple);
+    border-bottom: var(--accentGray) solid 5px;
+}
+
+.hsbnavlink{
+    color: white;
+    font-size: 25px;
+    margin-right: 20px;
 }
 
 .logo{
-    width:200px;
-    height:200px;
+    width:75px;
+    height:75px;
+    background-color: var(--purple);
+    border-radius: 25px;
+    border: var(--purple) solid 5px;
 }
