@@ -1,13 +1,20 @@
 :root{
-    --purple: #6200FF;
+    --purple: #975ef3;
     --accentPurple: #5620DC;
     --gray: #212225;
-    --accentGray : #37383B;
-    --terPurple: #975ef3;
+    --accentGray : #32353b;
+    --terPurple: #6200FF;
+    --discordBlue: #738adb;
 }
 
 body{
     background-color:var(--gray);
+    color: white;
+}
+
+a{
+    color: var(--purple);
+    text-decoration: none;
 }
 
 .hsbnav{
@@ -29,4 +36,106 @@ body{
     background-color: var(--purple);
     border-radius: 25px;
     border: var(--purple) solid 5px;
+}
+
+.botimage{
+    padding: 0;
+    width: 200px;
+    height: 200px;
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 100px;
+}
+
+.hsbimage{
+    border-radius: 10px;
+    height: auto;
+    width: 75%;
+}
+
+.hsbheadline{
+    margin-top: 1.5em;
+    padding: 10px;
+    background-color: var(--accentGray);
+    border-radius: 25px;
+}
+
+.invitebtn{
+    font-size: 24px;
+    border-color: var(--discordBlue);
+    background-color: var(--discordBlue);
+}
+
+.invitebtn:hover{
+    background-color: var(--discordBlue);
+}
+
+
+.invitebtncol{
+    padding-top: 1.5em;
+}
+
+.alternatingimage{
+    order: 2;
+}
+.alternatingtext{
+    order: 1;
+}
+
+.hsbrule{
+    border: none;
+     margin-top: 1.5em; 
+     height: 15px; 
+     background-color: #975ef3; 
+     opacity: 1.00;
+     border-bottom: var(--accentGray) solid 5px;
+}
+
+.commandheader{
+    margin-top: 1.5em;
+    margin-left: 0;
+}
+
+.contacticon{
+    font-size: 50px; 
+    vertical-align: middle;
+    margin-right: 20px;
+    width: 50px;
+}
+
+@media (min-width: 992px) {
+    .hsbimage{
+        width: 65%;
+        height: auto;
+    }
+    .alternatingimage{
+        order: unset;
+    }
+    .alternatingtext{
+        order: unset;
+    }
+    .invitebtn{
+        font-size: 36px;
+    }
+}
+
+@media (min-width: 768px) {
+    body{
+        font-size: 20px;
+    }
+    .invitebtn{
+        font-size: 30px;
+    }
+    .invitebtncol{
+        padding-top: 0.75em;
+    }
+    .hsbheadline{
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+
+    }
+    .commandheader{
+        margin-left: 1.5em;
+    }
+
 }
